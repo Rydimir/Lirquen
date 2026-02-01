@@ -106,7 +106,7 @@ const affectedPeople = [
     },
     {
         name: "Gastón Osvaldo Rivera",
-        id: "20098634",
+        id: "10195365-3",
         age: "",
         family: [
             { name: "Gastón", age: "" }
@@ -277,6 +277,7 @@ function showToast() {
         toast.classList.remove('show');
     }, 3000);
 }
+
 
 
 
