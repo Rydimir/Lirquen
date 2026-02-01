@@ -1,4 +1,4 @@
-// Sample data for people affected by fires
+// Datos de grupos familiares
 const affectedPeople = [
     {
         name: "Guillermina Labraña Faúndez",
@@ -277,5 +277,6 @@ function showToast() {
         toast.classList.remove('show');
     }, 3000);
 }
+
 
 
