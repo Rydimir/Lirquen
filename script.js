@@ -1,4 +1,4 @@
-// Datos de grupos familiares
+// Datos de personas afectadas por incendios
 const affectedPeople = [
     {
         name: "Guillermina Labraña Faúndez",
@@ -105,7 +105,7 @@ const affectedPeople = [
         }
     },
     {
-        name: "Gastón Osvaldo Rivera",
+        name: "Gastón Osvaldo Rivera (Cuenta bancaria de prima)",
         id: "10195365-3",
         age: "",
         family: [
@@ -121,7 +121,7 @@ const affectedPeople = [
     }
 ];
 
-// Initialize the page
+// Inicializa la página
 document.addEventListener('DOMContentLoaded', () => {
     renderCards();
 });
@@ -226,10 +226,6 @@ function createPersonCard(person, index) {
 // Copia los datos bancarios al portapapeles
 function copyBankDetails(index) {
     const person = affectedPeople[index];
-    const bankInfo = `
-Datos Bancarios - ${person.name}
-function copyBankDetails(index) {
-    const person = affectedPeople[index];
     const cleanRut = person.bankDetails.rut.replace(/\./g, '');
     const bankInfo = `
 ${person.name}
@@ -277,8 +273,3 @@ function showToast() {
         toast.classList.remove('show');
     }, 3000);
 }
-
-
-
-
-
