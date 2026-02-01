@@ -228,12 +228,15 @@ function copyBankDetails(index) {
     const person = affectedPeople[index];
     const bankInfo = `
 Datos Bancarios - ${person.name}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Banco: ${person.bankDetails.bank}
-Tipo de Cuenta: ${person.bankDetails.accountType}
-Número de Cuenta: ${person.bankDetails.accountNumber}
-RUT: ${person.bankDetails.rut}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+function copyBankDetails(index) {
+    const person = affectedPeople[index];
+    const cleanRut = person.bankDetails.rut.replace(/\./g, '');
+    const bankInfo = `
+${person.name}
+${cleanRut}
+${person.bankDetails.bank}
+${person.bankDetails.accountType}
+${person.bankDetails.accountNumber}
     `.trim();
 
     navigator.clipboard.writeText(bankInfo).then(() => {
@@ -274,4 +277,5 @@ function showToast() {
         toast.classList.remove('show');
     }, 3000);
 }
+
 
