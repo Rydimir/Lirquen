@@ -74,7 +74,7 @@ const affectedPeople = [
         age: "",
         family: [
             { name: "Mamá", age: 63 },
-            { name: "Baastian", age: 29 },
+            { name: "Bastian", age: 29 },
             { name: "Alejandra", age: "" },
             { name: "🐶Toto, Perro", age: 10 }
         ],
@@ -105,7 +105,7 @@ const affectedPeople = [
         }
     },
     {
-        name: "Gastón Osaldo Rivera",
+        name: "Gastón Osvaldo Rivera",
         id: "20098634",
         age: "",
         family: [
@@ -277,6 +277,7 @@ function showToast() {
         toast.classList.remove('show');
     }, 3000);
 }
+
 
 
 
